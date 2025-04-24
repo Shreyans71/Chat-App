@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 
 function useChatScroll(dep: any) {
-	const ref = useRef<HTMLElement>();
+	const ref = useRef<HTMLElement>(null);
+
 
 	useEffect(() => {
 		setTimeout(() => {
